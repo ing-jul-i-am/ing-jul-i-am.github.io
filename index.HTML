@@ -1,105 +1,98 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>My first page</title>
-<!--Aqui se agrega el estilo de la pagina.-->
-<link rel="stylesheet" href="style.css">
-<script src="Script.js"></script>
+    <meta charset="utf-8">
+    <title>My first page</title>
+    <!--Aqui se agrega el estilo de la pagina.-->
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
 </head>
 <body bgcolor="skyblue">
-<h4>Hello from Julian!</h4>
-<p>This is a local HTML file</p>
+    <h4>Hello from Julian!</h4>
+    <p>This is a HTML file</p>
 
-<nav><!--Este es el navigation menu.-->
-    <ul>
-        <li style="display:inline-block;"><a href="home.html">home</a></li>
-        <li style="display:inline-block;"><a href="Services.html">Services</a></li>
-        <li style="display:inline-block;"><a href="ContactUS.html">Contact us</a></li>
-    </ul>
-</nav>
+    <nav><!--Este es el navigation menu.-->
+        <ul>
+            <li style="display:inline-block;"><a href="home.html">home</a></li>
+            <li style="display:inline-block;"><a href="Services.html">Services</a></li>
+            <li style="display:inline-block;"><a href="ContactUS.html">Contact us</a></li>
+        </ul>
+    </nav>
 
-<p>Here are our courses:</p>
-<div><!--Script de cursos disponibles.-->
-    <script>
-        for (i=0;i<CoursesArray.length;i++) {
-            document.write("<span>" + CoursesArray[i] + "</span>" + " ");            
-        }
-    </script>
-</div>
-
-<p>Tell us about <span>your</span> course?</p>
-<form name="Feedback"><!--Formulario.-->
-    <div><!--Dropdown menu.-->
-        <select id="courses" onchange="ChoiceMade(this.value)">
-            <option value="Null">--Choose--</option>
-            <option value="Angular">Angular</option>
-            <option value="React">React</option>
-            <option value="Vue">Vue</option>
-            <option value="Javascript">JavaScript</option>
-            <option value="Python">Python</option>
-        </select>
+    <p>Here are our courses:</p>
+    <div><!--Script de cursos disponibles.-->
+        <script>
+            for (i=0;i<CoursesArray.length;i++) {
+                document.write("<span>" + CoursesArray[i] + "</span>" + " ");            
+            }
+        </script>
     </div>
-    <div id="Favorites">
-        <div><!--Favorite instructor-->
-            <label class="standoutLabel">Enter your favorite instructor:</label>
-            <input type="text" id="InstructorName" required minlength="4">
+
+    <!--
+    <p>Tell us about <span>your</span> course?</p>
+    <form name="Feedback"><!--Formulario.-->
+        <div><!--Dropdown menu.--''>
+            <select id="courses" onchange="ChoiceMade(this.value)">
+                <option value="Null">--Choose--</option>
+                <option value="Angular">Angular</option>
+                <option value="React">React</option>
+                <option value="Vue">Vue</option>
+                <option value="Javascript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
         </div>
-        <div><!--Favourite course-->
-            <label class="standoutLabel">Enter your favorite course:</label>
-            <input type="text" id="CourseName" required maxlength="6" pattern="[A-Za-z]{1,}[+]{0-2}">
-        </div>
-        <div><!--Radio button.-->
-            <label>Did you like the course?</label>
-        </div>
-        <div id="Likes" aria-required="false">
-            <input type="radio" name="Like">Yes
-            <input type="radio" name="Like">No
+        <div id="Favorites">
+            <div><!--Favorite instructor-'->
+                <label class="standoutLabel">Enter your favorite instructor:</label>
+                <input type="text" id="InstructorName" required minlength="4">
+            </div>
+            <div><!--Favourite course-'->
+                <label class="standoutLabel">Enter your favorite course:</label>
+                <input type="text" id="CourseName" required maxlength="6" pattern="[A-Za-z]{1,}[+]{0-2}">
+            </div>
+            <div><!--Radio button.-'->
+                <label>Did you like the course?</label>
+            </div>
+            <div id="Likes" aria-required="false">
+                <input type="radio" name="Like">Yes
+                <input type="radio" name="Like">No
+            </div>
+            <div>
+                <label>Upcoming Courses</label>
+            </div>
+            <div id="FutureCourses">
+                
+            </div>
         </div>
         <div>
-            <label>Upcoming Courses</label>
+            <button class="green_btn" onclick="Validate();">Send</button>
         </div>
-        <div id="FutureCourses">
-            
-        </div>
-    </div>
-    <div>
-        <button class="green_btn" onclick="Validate();">Send</button>
-    </div>
-</form>
-
-<table><!--Esto es para insertar una tabla.-->
-    <tr>
-        <th>Course</th>
-        <th>Instructor</th>
-        <th>Start</th>
-    </tr>
-    <tr>
-        <td>JavaScript</td>
-        <td>Axle Barr</td>
-        <td>Jan 7th</td>
-    </tr>
-    <tr>
-        <td>C#</td>
-        <td>Jhon Smith</td>
-        <td>Jan 16th</td>
-    </tr>
-    <tr>
-        <td>Java</td>
-        <td>Mary Smith</td>
-        <td>Feb 16th</td>
-    </tr>
-</table>
-
-<!--Imagenes de los patojos locos
-<Center>Rocio Nineth Soberanis esta bien loca. XD
-<br>
-<img src="file:///C:\Users\52323481\Documents\Universidad Julian\Cursos libres\Aspire Journey - programmer essentials\Track 2/foto%20rocio.jpg">
-<p>Gerard Alexandre esta bien loco. XD
-<br>
-<img src="file:///C:\Users\52323481\Documents\Universidad Julian\Cursos libres\Aspire Journey - programmer essentials\Track 2/Foto%20Gerard.jpg">
-</p>
-</Center>
+    </form>
 -->
+
+    <table><!--Esto es para insertar una tabla.-->
+        <tr>
+            <th>Course</th>
+            <th>Instructor</th>
+            <th>Start</th>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Axle Barr</td>
+            <td>Jan 7th</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>Jhon Smith</td>
+            <td>Jan 16th</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Mary Smith</td>
+            <td>Feb 16th</td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
