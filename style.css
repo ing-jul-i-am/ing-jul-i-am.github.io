@@ -1,0 +1,43 @@
+body {
+    Font-family: Verdana, Sans-serif;
+    background-image: linear-gradient(to bottom right, #a792e7, #84f584);
+}
+h4 {
+    color: rgb(43, 146, 103);
+    letter-spacing: 4px;
+}
+span {
+    text-decoration: underline;
+}
+#courses {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.standoutLabel {
+    background-color: gainsboro;
+    display:inline-block;
+}
+input[type=text]{
+    margin-top: 10px;
+    /*text-transform: uppercase;*/
+}
+#Favorites {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px;
+    margin-top: 20px;
+    border-style:solid;
+    border-width: 4px;
+    border-image-source: linear-gradient(to bottom right, #8af78a, #6638f0);
+    border-image-slice: 4;
+    background-image: linear-gradient(to bottom right, #6638f0, #8af78a);
+    padding:5px;
+}
+
+#Likes {
+    border-style:solid;
+    background-color: gainsboro;
+    border-width: 1px;
+    width:120px;
+    height:40px;
+}
