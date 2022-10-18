@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
     <title>My first page</title>
     <!--Aqui se agrega el estilo de la pagina.-->
     <link rel="stylesheet" href="style.css">
-    <script src="Script.js"></script>
+    <!--<script src="Script.js"></script> -->
 </head>
 <body bgcolor="skyblue">
     <h4>Hello from Julian!</h4>
@@ -21,18 +20,19 @@
 
     <p>Here are our courses:</p>
     <div><!--Script de cursos disponibles.-->
-        <script>
+        <!--<script>
             for (i=0;i<CoursesArray.length;i++) {
                 document.write("<span>" + CoursesArray[i] + "</span>" + " ");            
             }
-        </script>
+        </script>-->
     </div>
 
     
     <p>Tell us about <span>your</span> course?</p>
     <form name="Feedback"><!--Formulario.-->
         <div><!--Dropdown menu.-->
-            <select id="courses" onchange="ChoiceMade(this.value)">
+            <!--<select id="courses" onchange="ChoiceMade(this.value)">-->
+            <select id="courses">
                 <option value="Null">--Choose--</option>
                 <option value="Angular">Angular</option>
                 <option value="React">React</option>
